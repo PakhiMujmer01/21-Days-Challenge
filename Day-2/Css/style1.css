@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+:root{
+    --primary-color:#258dd3;
+    --white-color:#fff;
+    --black-color:#3C4A57; 
+    --light-gray:#E4E8EE;
+}
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+.container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(/Images/login-bg.jfif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    z-index: -1;
+}
+.container .headline{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 40px;
+    color: var(--primary-color)
+}
+.container .form{
+    max-width:350px;
+    width:100%;
+    margin:auto;
+}
+.container .form-group{
+    margin-bottom: 20px;
+}
+.container .form-group input{
+    padding: 10px 20px;
+    width: 300px;
+    border: 1px solid var(--light-gray);
+    color: var(--black-color);
+    border-radius: 3px;
+}
+.btn{
+    width: 300px;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color:var(--white-color);
+    background-color: var(--primary-color);
+    border:none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+}
+.account-exist{
+    font-size: 15px;
+    color: var(--black-color);
+    border-top: 1px solid black;
+    padding-top: 20px;
+    text-align: center;
+}
+.forget-pass{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.forget-pass a{
+    font-size: 15px;
+}
+.forget-pass .check-box{
+    font-size: 15px;
+    color: var(--black-color);
+}

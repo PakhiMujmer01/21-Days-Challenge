@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+<body>
+    <div class="container">
+        <div class="headline">
+            <h1>Welcome!</h1>
+        </div>
+        <form action="home page.html" class="form"onsubmit="return validate()">
+            <div class="sign-in active">
+                <div class="form-group">
+                    <input type="email" placeholder="Email" id="uname">
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" id="pass">
+                </div>
+                <div class="forget-pass">
+                    <div class="check-box">
+                        <input type="checkbox"  id="checkbox">
+                        <label for="checkbox">Remember Me</label>
+                    </div>
+                    <a href="#">Forget Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="account-exist">
+                    Create a New account? <a href="#" id="signup">Signup</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
