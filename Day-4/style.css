@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+/* Backgrounds - light gray #f1f9fc
+ Buttons, icons - purple #594cda
+- Buttons, icons - red #eb427e
+- Headings text - black #252c38
+- Body text - dark gray #6b747b */
+.navbar{
+    display: flex;
+}
+.header{
+    background: linear-gradient(rgba(197, 234, 249, 1), rgba(255, 255, 255, 1));
+    height: 100vh;
+}
+.logo{
+    margin-left: 120px;
+    margin-top: 35px;
+}
+.navbar h1{
+    margin-top: 35px;
+    margin-left: 5px;
+    font-size: 40px;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    position: absolute;
+    right: 100px;
+    padding-top: 40px;
+
+}
+.navbar ul a{
+  margin-left: 25px;
+  text-decoration: none;
+  color: #6b747b;
+  font-size: 18px;
+  transition: all .3s;
+}
+.navbar ul a:hover{
+    color: #eb427e;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eb427e;
+   
+}
+.header-text{
+    width: 500px;
+position: absolute;
+    top: 300px;
+    left: 150px;
+}
+.header-text h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #1d1e1f;
+}
+.header-text p{
+    font-size: 20px;
+    color: #6b747b;
+    margin-bottom: 20px;
+}
+.btn1{
+    padding: 10px 35px;
+    background-color:#594cda ;
+    color: white;
+    border-radius: 25px;
+    border: 1px solid #594cda;
+    font-size: 18px;
+    transition: all .3s;
+    cursor: pointer;
+}
+.btn1 i, .btn2 i{
+    margin-right: 2px;
+    font-size: 25px;
+}
+.btn1:hover{
+    border: 1px solid #594cda;
+    color: #594cda;
+    background-color: white;
+}
+.btn2{
+    padding: 10px 35px;
+    background-color: #eb427e;
+    color: white;
+    border-radius: 25px;
+    border: 1px solid #eb427e;
+    font-size: 18px;
+    transition: all .3s;
+    cursor: pointer;
+}
+.btn2:hover{
+    border: 1px solid #eb427e;
+    color: #eb427e;
+    background-color: white;
+}
+.header-img{
+    position: absolute;
+    right: 100px;
+    top: 160px;
+    z-index: 1;
+}
